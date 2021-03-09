@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('tests/test', 'TestController@index');
+Route::get('contact/index', 'ContactFormController@index');
 //Route::resource('contacts', 'ContactFormController');
 
 Auth::routes();
