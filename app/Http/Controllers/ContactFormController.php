@@ -43,7 +43,8 @@ class ContactFormController extends Controller
      */
     public function store(Request $request)
     {
-         //
+         $your_name = $request->input('your_name');
+         dd($your_name);
     }
 
     /**
