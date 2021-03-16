@@ -54,7 +54,7 @@ class ContactFormController extends Controller
          $contact->age = $request->input('age');
          $contact->contact = $request->input('contact');
          
-         //$contact->save();
+         $contact->save();
 
          return redirect('contact/index');
          
