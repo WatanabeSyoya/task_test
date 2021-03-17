@@ -19,10 +19,15 @@ class ContactFormController extends Controller
 
         //エロクワント  ORマッパー
         //$contacts = ContactForm::all();
-
+        //dd($contacts);
         //クエリビルダ
+        $contacts = DB::table('contact_forms')
+        ->select('id','your_name','title', 'created_at')
+        ->get();
 
-        return view('contact.index');
+        //dd($contacts);
+
+        return view('contact.index', compact('contacts'));
     }
 
     /**
