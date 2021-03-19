@@ -23,6 +23,7 @@
                         <th scope="col">氏名</th>
                         <th scope="col">件名</th>
                         <th scope="col">作成日</th>
+                        <th scope="col">詳細</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,6 +33,7 @@
                                 <td>{{ $contact->your_name }}</td>
                                 <td>{{ $contact->title }}</td>
                                 <td>{{ $contact->created_at }}</td>
+                                <td><a href="{{ route('contact.show' , ['id' => $contact->id] ) }}">詳細を見る</a></td>
                             </tr>
                         @endforeach
                     </tbody>
