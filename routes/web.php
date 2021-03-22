@@ -10,12 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'ContactFormController@index')->name('index');
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('tests/test', 'TestController@index');
+//Route::get('tests/test', 'TestController@index');
 
 Route::group(['prefix' => 'contact', 'middleware' => 'auth'], function(){
     Route::get('index', 'ContactFormController@index')->name('contact.index');
@@ -29,4 +27,4 @@ Route::group(['prefix' => 'contact', 'middleware' => 'auth'], function(){
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
