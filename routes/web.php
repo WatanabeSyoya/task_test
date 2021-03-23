@@ -13,7 +13,7 @@
 Route::get('/', 'ContactFormController@index')->name('index');
 
 
-//Route::get('tests/test', 'TestController@index');
+
 
 Route::group(['prefix' => 'contact', 'middleware' => 'auth'], function(){
     Route::get('index', 'ContactFormController@index')->name('contact.index');
