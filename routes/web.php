@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', 'ContactFormController@index')->name('index');
-
+//トップページを一覧画面に
 
 
 
