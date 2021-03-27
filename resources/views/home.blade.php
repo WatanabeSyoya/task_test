@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are 
+                    You
                 </div>
             </div>
         </div>
