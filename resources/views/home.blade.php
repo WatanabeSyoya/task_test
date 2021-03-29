@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    Yo
+                    You 
                 </div>
             </div>
         </div>
